@@ -1,2 +1,3 @@
 # Fin-Tech
-Relevant codes of Fin-Tech is provided.
+Relevant codes of Fin-Tech taught by Xiaolin Zheng is provided.
+
