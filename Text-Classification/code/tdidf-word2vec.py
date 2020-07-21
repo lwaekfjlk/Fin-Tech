@@ -9,11 +9,15 @@ from sklearn.feature_extraction.text import TfidfTransformer
 from sklearn.feature_extraction.text import CountVectorizer
 from sklearn.model_selection import train_test_split
 from sklearn.naive_bayes import MultinomialNB
+from sklearn import svm
 from sklearn import metrics
 import gensim
 
 
-N = 80
+WORD2VEC_PATH = "~/bert/wiki.zh.text/wiki.zh.text.vector"
+STOPWORD_PATH = "./stopWord.txt"
+
+N = 80 # filter_lower_bound
 
 
 def filter_special(desstr,restr=''):
@@ -86,7 +90,7 @@ def change_label2num():
 
 def TF_IDF():
 	cleaned_data = []
-	with open("./stopWord.txt") as stop:
+	with open(STOPWORD_PATH) as stop:
 		stopwords = set()
 		for line in stop:
 			stopwords.add(line.strip())
@@ -120,15 +124,15 @@ def classify_tfidf():
     
     result = metrics.classification_report(y_test,y_predict)
     print(result)
+    return X,y
 
 def classify_word2vec():
 	# load model
-	model = gensim.models.KeyedVectors.load_word2vec_format("./wiki.zh.text.vector", binary=False)
-
+	model = gensim.models.KeyedVectors.load_word2vec_format(WORD2VEC_PATH, binary=False)
 
 	cleaned_data = []
 	labels = []
-	with open("./stopWord.txt") as stop:
+	with open(STOPWORD_PATH) as stop:
 		stopwords = set()
 		for line in stop:
 			stopwords.add(line.strip())
@@ -140,6 +144,8 @@ def classify_word2vec():
 			split_no_stop_line = split_word(no_special_line,stopwords)
 			cleaned_data.append(split_no_stop_line)
 		cnt = 0
+		sentences_vectors = []
+		sentences_y = []
 		for sentence in cleaned_data:
 			words = sentence.split(" ")
 			vector = []
@@ -148,24 +154,28 @@ def classify_word2vec():
 				try:
 					vector.append(model[word])
 				except:
-					print('Cannot find word in word2vec corpus')
+					print('Cannot find word '+ word +' in word2vec corpus')
 					continue
-			sentences_vectors.append(sum(np.array(vector)) / len(vector))
-			sentences_y.append(labels[cnt])
+			if (len(vector) > 0):
+				sentences_vectors.append(sum(np.array(vector)) / len(vector))
+				sentences_y.append(labels[cnt])
 			cnt += 1
 		X = np.array(sentences_vectors)
 		y = np.array(sentences_y)
 		X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.3, random_state=31)
-		model = MultinomialNB()
-		model.fit(X_train, y_train)
-		y_predict = model.predict(X_test)
+		clf = svm.SVC()
+		clf.fit(X_train, y_train)
+		y_predict = clf.predict(X_test)
 		result = metrics.classification_report(y_test,y_predict)
 		print(result)
+		return X,y
+
 
 if __name__ == '__main__':
 	get_merge_data()
 	change_label2num()
 	TF_IDF()
-	classify_tfidf()
-	#classify_word2vec()
+	X_tfidf, y_tfidf = classify_tfidf()
+	X_word2vec, y_word2vec = classify_word2vec()
+
 
