@@ -17,11 +17,9 @@ Current available codes include:
 
 * Investment-Portfolio
 
-  * Provide a framework of Portfolio
+  * Using Data from *NYSE*
 
-  * Using cvxopt as optimizer
-
-  * Include 
+  * Include models of
 
     * EW (naive version)
 
