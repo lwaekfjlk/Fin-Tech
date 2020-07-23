@@ -31,9 +31,9 @@ Current available codes include:
 
     * EG(*1998 Mathematical Finance EG*)
 
-      ![截屏2020-07-24上午2.01.11](/Users/yuhaofei/Library/Application Support/typora-user-images/截屏2020-07-24上午2.01.11.png)
+      <img src="./Investment-Portfolio/EG.png" alt="截屏2020-07-24上午2.00.37" style="zoom:50%;" />
 
     * ONS(*2006 ICML ONS*)
 
-      ![截屏2020-07-24上午2.00.37](/Users/yuhaofei/Library/Application Support/typora-user-images/截屏2020-07-24上午2.00.37.png)
+      <img src="./Investment-Portfolio/ONS.png" alt="截屏2020-07-24上午2.00.37" style="zoom:50%;" />
 
