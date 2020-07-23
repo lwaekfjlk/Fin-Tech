@@ -8,16 +8,16 @@ Current available codes include:
   * trivial code based on **Requests** packages [which I prefer] to grasp basic stock information from xueqiu.com
 * Clustering-Classification [unfinished]
   * Clustering code including KNN, Spectral Clustering
-  * Classification code including Perceptron, Logistic Regression, Linear Regression
+  * Binary classification including Perceptron, Logistic Regression, Linear Regression
 
 * Text-Classification
 
-  * Using Data from *tushare*
-  * Vectorizing by means of **TF-IDF** and **word2vec**
+  * Using Dataset from *tushare*
+  * Multi-class text classification and vectorizing by means of **TF-IDF** and **word2vec**
 
 * Investment-Portfolio
 
-  * Using Data from *NYSE*
+  * Using Dataset from *NYSE*
 
   * Include models of
 
