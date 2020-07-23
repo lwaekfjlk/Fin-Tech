@@ -23,17 +23,21 @@ Current available codes include:
 
   * Include 
 
+    * EW (naive version)
+
+      $W = 1/n$
+
     * MV (*Markowitz mean-variance*) 
 
       ​														$min \quad W^{T}CW + \alpha \mu^{T}W$
 
       ​																	$s.t. \sum W_i = 1$
 
-    * EG(*1998 Mathematical Finance EG*)
+    * EG (*1998 Mathematical Finance EG*)
 
       <img src="./Investment-Portfolio/EG.png" alt="截屏2020-07-24上午2.00.37" style="zoom:50%;" width = 300 />
 
-    * ONS(*2006 ICML ONS*)
+    * ONS (*2006 ICML ONS*)
 
       <img src="./Investment-Portfolio/ONS.png" alt="截屏2020-07-24上午2.00.37" style="zoom:50%;" width = 300 />
 
