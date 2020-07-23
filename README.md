@@ -31,9 +31,9 @@ Current available codes include:
 
     * EG(*1998 Mathematical Finance EG*)
 
-      <img src="./Investment-Portfolio/EG.png" alt="截屏2020-07-24上午2.00.37" style="zoom:50%;" width = 600 />
+      <img src="./Investment-Portfolio/EG.png" alt="截屏2020-07-24上午2.00.37" style="zoom:50%;" width = 300 />
 
     * ONS(*2006 ICML ONS*)
 
-      <img src="./Investment-Portfolio/ONS.png" alt="截屏2020-07-24上午2.00.37" style="zoom:50%;" width = 600 />
+      <img src="./Investment-Portfolio/ONS.png" alt="截屏2020-07-24上午2.00.37" style="zoom:50%;" width = 300 />
 
