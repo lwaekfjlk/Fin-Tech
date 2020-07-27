@@ -9,7 +9,7 @@ Current available codes include:
   
 * Data-Processing
 
-  * Basic Operation including data preprocessing, data cleanning and cross feature enginerring
+  * Basic Operation including data preprocessing, data cleanning and cross feature engineering
 
 * Clustering-Classification [unfinished]
   * Clustering code including KNN, Spectral Clustering
@@ -49,6 +49,7 @@ Current available codes include:
   * Using Feature Engineering and Classification Model to classify applicants
   * Feature Engineering includes constructing and filtering polynomial features,  normarlizing and fulfilling
   * Classification Model includes lightgbm,GBDT,LR,XGBoost
+  * Best results are created by lightgbm of **72.64%** AUC
 
 * Potential-Customer-Mining
 
