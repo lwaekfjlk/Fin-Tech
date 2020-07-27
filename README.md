@@ -6,6 +6,11 @@ Current available codes include:
 * Web-Crawler
   * tutorial code based on **Scrapy** Framework [which I am not familiar with]
   * trivial code based on **Requests** packages [which I prefer] to grasp basic stock information from xueqiu.com
+  
+* Data-Processing
+
+  * Basic Operation including data preprocessing, data cleanning and cross feature enginerring
+
 * Clustering-Classification [unfinished]
   * Clustering code including KNN, Spectral Clustering
   * Binary classification including Perceptron, Logistic Regression, Linear Regression
@@ -38,4 +43,14 @@ Current available codes include:
     * ONS (*2006 ICML ONS*)
 
       <img src="./Investment-Portfolio/ONS.png" alt="截屏2020-07-24上午2.00.37" style="zoom:50%;" width = 300 />
+  
+* Risk-Control
 
+  * Using Feature Engineering and Classification Model to classify applicants
+  * Feature Engineering includes constructing and filtering polynomial features,  normarlizing and fulfilling
+  * Classification Model includes lightgbm,GBDT,LR,XGBoost
+
+* Potential-Customer-Mining
+
+  * Feature Engineering only include basic normalizing and fulfilling
+  * Classification Model uses 8 models in sklearn
