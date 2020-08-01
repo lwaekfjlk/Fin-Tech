@@ -80,4 +80,4 @@ Current available codes include:
 
   * Best Score on test data
 
-    ![截屏2020-08-01下午7.47.36](./Home_Credit_Default_Risk/result.png)
+    ![result](./Home_Credit_Default_Risk/result.png)
