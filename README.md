@@ -80,4 +80,4 @@ Current available codes include:
 
   * Best Score on test data
 
-    ![result](./Home_Credit_Default_Risk/result.png)
+    ![result](./Home-Credit-Default-Risk/result.png)
