@@ -55,3 +55,27 @@ Current available codes include:
 
   * Feature Engineering only include basic normalizing and fulfilling
   * Classification Model uses 8 models in sklearn
+  
+* **Home Credit Default Risk**
+
+  * finished a kaggle competition named "Home Credit Default Risk", Link is https://www.kaggle.com/c/home-credit-default-risk/overview
+
+  * Classification Model using LightGBM
+
+  * Feature Engineering includes data precessing of 6 Datasets
+
+    * application_train/test.csv
+    * bureau.csv / bureau_balance.csv
+    * previous_application.csv
+    * POS_CASH_balance.csv
+    * installments_payments.csv
+    * credit_card_balance.csv
+
+  * Key Points when modifying the process in order to raise the score on Kaggle
+
+    * Better Domain Knowledge constructed feature
+    * Better model parameters
+
+  * Best Score on test data
+
+    ![截屏2020-08-01下午7.47.36](./Home_Credit_Default_Risk/result.png)
