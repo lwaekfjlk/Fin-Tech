@@ -81,3 +81,15 @@ Current available codes include:
   * Best Score on test data
 
     ![result](./Home-Credit-Default-Risk/result.png)
+
+  * Valuable Refering Material
+
+    * Notebook
+
+      https://www.kaggle.com/willkoehrsen/start-here-a-gentle-introduction
+
+      https://www.kaggle.com/jsaguiar/lightgbm-with-simple-features
+
+    * Discussion
+
+      https://www.kaggle.com/c/home-credit-default-risk/discussion/64821
