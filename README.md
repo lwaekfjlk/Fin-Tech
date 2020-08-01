@@ -56,7 +56,9 @@ Current available codes include:
   * Feature Engineering only include basic normalizing and fulfilling
   * Classification Model uses 8 models in sklearn
   
-* **Home Credit Default Risk**
+* **Home-Credit-Default-Risk**
+
+  * Final Project for the Fin-Tech Class
 
   * finished a kaggle competition named "Home Credit Default Risk", Link is https://www.kaggle.com/c/home-credit-default-risk/overview
 
